@@ -15,6 +15,9 @@ public class Renderer extends JFrame implements MouseListener {
 
     GameBoard gameBoardLogic;
 
+    /**
+        set the board parameters
+     */
     public Renderer(GameBoard gameBoardLogic) {
 
         // Reference to game logic
@@ -102,6 +105,9 @@ public class Renderer extends JFrame implements MouseListener {
 
     public void paint(Graphics g) {
 
+        /**
+            render the board
+         */
         for(int row = 0; row < 8; row++) {
             for(int col = 0; col < 8; col++) {
 

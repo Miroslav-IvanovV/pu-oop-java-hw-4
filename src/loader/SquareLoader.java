@@ -19,6 +19,9 @@ public class SquareLoader {
         return squareCollection;
     }
 
+    /**
+        declaring red squares
+     */
     private void declaringRedSquares(){
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
@@ -27,6 +30,9 @@ public class SquareLoader {
         }
     }
 
+    /**
+        declaring the yellow square
+     */
     private void declaringStartingSquare(){
         int randomNumber = randomGenerator(4);
 
@@ -51,6 +57,9 @@ public class SquareLoader {
         }
     }
 
+    /**
+        declaring Green squares
+     */
     private void declaringGreenSquares(){
         int row, col;
 
@@ -67,6 +76,9 @@ public class SquareLoader {
         }
     }
 
+    /**
+        declaring blue squares
+     */
     private void declaringBlueSquares(){
         int row, col;
 
@@ -82,6 +94,9 @@ public class SquareLoader {
         }
     }
 
+    /**
+        random number generator
+     */
     public static int randomGenerator(int bound){
         Random rand = new Random();
         int random = rand.nextInt(bound);

@@ -38,6 +38,10 @@ public class Square {
 
     public boolean getIsBabyYagaThere(){return isBabaYagaThere;}
 
+
+    /**
+        render method
+     */
     public void render(Graphics g){
         g.setColor(this.color);
         g.fill3DRect(col * 100,row * 100,100,100,true);
