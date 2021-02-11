@@ -14,6 +14,7 @@ public class SquareLoader {
         declaringRedSquares();
         declaringStartingSquare();
         declaringGreenSquares();
+        declaringBlueSquares();
 
         return squareCollection;
     }

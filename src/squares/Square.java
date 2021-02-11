@@ -22,4 +22,10 @@ public class Square {
     public Color getColor(){
         return color;
     }
+
+    public void render(Graphics g){
+        g.setColor(this.color);
+        g.fill3DRect(row* 100,col * 100,100,100,true);
+
+    }
 }
