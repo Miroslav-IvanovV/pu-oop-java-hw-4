@@ -32,18 +32,22 @@ public class SquareLoader {
 
         if(randomNumber == 0){
             squareCollection[0][0].setColor(Color.YELLOW);
+            squareCollection[0][0].setAmIHere(true);
         }
 
         if(randomNumber == 1){
             squareCollection[7][7].setColor(Color.YELLOW);
+            squareCollection[7][7].setAmIHere(true);
         }
 
         if(randomNumber == 2){
             squareCollection[0][7].setColor(Color.YELLOW);
+            squareCollection[0][7].setAmIHere(true);
         }
 
-        if(randomNumber == 0){
+        if(randomNumber == 3){
             squareCollection[7][0].setColor(Color.YELLOW);
+            squareCollection[7][0].setAmIHere(true);
         }
     }
 
@@ -56,6 +60,7 @@ public class SquareLoader {
 
             if(squareCollection[row][col].getColor() == Color.RED){
                 squareCollection[row][col].setColor(Color.GREEN);
+                if(i == 0) squareCollection[row][col].setIsBabaYagaThere(true);
             } else {
                 i--;
             }
@@ -77,7 +82,7 @@ public class SquareLoader {
         }
     }
 
-    private int randomGenerator(int bound){
+    public static int randomGenerator(int bound){
         Random rand = new Random();
         int random = rand.nextInt(bound);
         return random;
